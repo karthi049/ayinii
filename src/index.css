@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-4xl font-marker bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent mb-4;
+  }
+}
