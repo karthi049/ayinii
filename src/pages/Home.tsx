@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ProductFlow from "../components/ProductFlow";
+import { BackgroundRippleEffect } from "../components/ui/background-ripple-effect";
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -54,21 +55,8 @@ const Home: React.FC = () => {
     <div>
       <section className="relative bg-black text-white py-40 overflow-hidden">
       {/* Full Background 3D Model via iframe */}
-      <div className="absolute inset-0 w-full h-full">
-        <iframe
-          src="https://my.spline.design/forestlightscopy-FOTPRv5fjaHCz6xMKFEywFpp/"
-          style={{
-            width: "100%",
-            height: "100%",
-            border: "none",
-            background: "transparent",
-          }}
-          title="3D Background Model"
-          loading="lazy"
-          allowFullScreen
-        />
-      </div>
-
+      
+  <BackgroundRippleEffect  />
       {/* Content overlay */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col items-center justify-center text-center">
@@ -99,7 +87,7 @@ const Home: React.FC = () => {
                 Download App
               </button>
 
-              <button className="border-2 border-gray-900 text-orange-400 px-8 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-orange-400 transition-colors">
+              <button className="border-2 border-gray-900 text-orange-400 px-6 py-2 rounded-lg font-semibold hover:bg-gray-900 hover:text-orange-400 transition-colors">
                 Explore More
               </button>
             </div>
@@ -108,12 +96,8 @@ const Home: React.FC = () => {
       </div>
 
       {/* Instructions Card - Bottom Right */}
-      <div className="absolute bottom-6 right-6 z-20">
-        <div className="bg-black bg-opacity-100 px-4 py-3 rounded-lg border border-black">
-          <p className="text-white text-sm font-medium">
-            Tap and scroll to Interact
-          </p>
-        </div>
+      <div className="absolute bottom-4 right-6 z-20">
+        
       </div>
     </section>
       <div>
