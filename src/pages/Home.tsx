@@ -4,8 +4,6 @@ import certificate from "../images/certificate.svg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ProductFlow from "../components/ProductFlow";
-import { BackgroundRippleEffect } from "../components/ui/background-ripple-effect";
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -53,19 +51,19 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <section className="relative bg-black text-white py-40 overflow-hidden">
+      <section className="relative text-black py-40 overflow-hidden">
       {/* Full Background 3D Model via iframe */}
       
-  <BackgroundRippleEffect  />
+  
       {/* Content overlay */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col items-center justify-center text-center">
           {/* Centered Content */}
           <div className="max-w-4xl">
-            <h2 className="text-3xl md:text-5xl font-marker mb-2 text-white">
+            <h2 className="text-3xl md:text-5xl mb-2 text-white">
               Welcome to
             </h2>
-            <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-marker bg-gradient-to-r from-orange-300 to-orange-700 bg-clip-text text-transparent mb-6 leading-none">
+            <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-bold bg-gradient-to-r from-orange-300 to-orange-700 bg-clip-text text-transparent mb-8 leading-none">
               Ayin!
             </h1>
 
@@ -116,7 +114,7 @@ const Home: React.FC = () => {
           {/* Right Side: Text */}
           <div className="md:w-1/2 h-1/2 md:h-full flex items-center justify-center px-8">
             <div className="text-center md:text-left">
-              <h1 className="text-4xl font-marker bg-gradient-to-r from-orange-400 to-orange-900 bg-clip-text text-transparent mb-4">Why Ayini ?</h1>
+              <h1 className="text-4xl bg-gradient-to-r from-orange-400 to-orange-900 bg-clip-text text-transparent mb-4">Why Ayini ?</h1>
               <p className="text-lg text-white mb-6">
                 Your gateway to powerful digital certifications and learning
                 tools.
@@ -220,10 +218,6 @@ const Home: React.FC = () => {
     </div>
   </div>
 </section>
-
-<section className="w-full">
-        <ProductFlow />
-      </section>
 
       </section>
 
