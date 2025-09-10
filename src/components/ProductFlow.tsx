@@ -81,7 +81,7 @@ export default function ProductFlow() {
   ];
 
   return (
-    <section className="relative w-full py-20 bg-black">
+    <section className="relative w-full py-20 bg-white">
       <h2 className="text-4xl font-bold text-center mb-12">Product Flow</h2>
 
       <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 md:px-20">
@@ -101,7 +101,7 @@ export default function ProductFlow() {
             <h3 className="text-2xl font-semibold mb-3 relative z-10">
               {item.title}
             </h3>
-            <p className="text-gray-200 relative z-10">{item.text}</p>
+            <p className="text-black relative z-10">{item.text}</p>
           </div>
         ))}
       </div>
