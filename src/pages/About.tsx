@@ -41,7 +41,7 @@ const About: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-black text-white py-20">
+      <section className="bg-white text-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent mb-6">About Ayini</h1>
@@ -53,7 +53,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Story Section */}
-      <section className="bg-black text-white py-16">
+      <section className="bg-white text-black py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -95,7 +95,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Values Section */}
-      <section className="bg-black text-white py-16">
+      <section className="bg-white text-black py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent mb-4">
@@ -140,7 +140,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Stats Section */}
-      <section className=" bg-black text-white py-16">
+      <section className=" bg-white text-black py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => {

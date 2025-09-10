@@ -4,6 +4,8 @@ import certificate from "../images/certificate.svg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ProductFlow from "../components/ProductFlow";
+
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -51,23 +53,19 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <section className="relative text-black py-40 overflow-hidden">
-      {/* Full Background 3D Model via iframe */}
-      
-  
-      {/* Content overlay */}
+      <section className="relative bg-white text-black py-40 overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col items-center justify-center text-center">
           {/* Centered Content */}
           <div className="max-w-4xl">
-            <h2 className="text-3xl md:text-5xl mb-2 text-white">
+            <h2 className="text-3xl md:text-5xl mb-2 text-black">
               Welcome to
             </h2>
-            <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-bold bg-gradient-to-r from-orange-300 to-orange-700 bg-clip-text text-transparent mb-8 leading-none">
+            <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-bold bg-gradient-to-r from-orange-300 to-orange-700 bg-clip-text text-transparent mb-10 leading-none">
               Ayin!
             </h1>
 
-            <p className="text-xl md:text-2xl mb-8 text-white">
+            <p className="text-xl md:text-2xl mb-8 text-black">
               We create amazing experiences that drive results for your
               business
             </p>
@@ -100,7 +98,7 @@ const Home: React.FC = () => {
     </section>
       <div>
         <section
-          className="w-full h-screen bg-black flex flex-col md:flex-row"
+          className="w-full h-screen bg-white flex flex-col md:flex-row"
         >
           {/* Left Side: Image */}
           <div className="md:w-1/2 h-1/2 md:h-full flex items-center justify-center">
@@ -114,8 +112,8 @@ const Home: React.FC = () => {
           {/* Right Side: Text */}
           <div className="md:w-1/2 h-1/2 md:h-full flex items-center justify-center px-8">
             <div className="text-center md:text-left">
-              <h1 className="text-4xl bg-gradient-to-r from-orange-400 to-orange-900 bg-clip-text text-transparent mb-4">Why Ayini ?</h1>
-              <p className="text-lg text-white mb-6">
+              <h1 className="text-4xl font-marker bg-gradient-to-r from-orange-400 to-orange-900 bg-clip-text text-transparent mb-4">Why Ayini ?</h1>
+              <p className="text-lg text-black mb-6">
                 Your gateway to powerful digital certifications and learning
                 tools.
               </p>
@@ -127,13 +125,13 @@ const Home: React.FC = () => {
         </section>
       </div>
 
-      <section className="py-16 bg-black">
+      <section className="py-16 bg-white text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Why Choose Us?
             </h2>
-            <p className="text-lg text-white max-w-2xl mx-auto">
+            <p className="text-lg text-black max-w-2xl mx-auto">
               We combine innovation, expertise, and dedication to deliver
               exceptional results for our clients.
             </p>
@@ -158,14 +156,14 @@ const Home: React.FC = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-white">{feature.description}</p>
+                <p className="text-black">{feature.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
       
-      <section className="py-10 bg-black" id="certifications">
+      <section className="py-10 bg-white text-black" id="certifications">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Ayini Certifications</h2>
 
@@ -185,7 +183,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-<section className="py-16 bg-black text-white" id="industries">
+<section className="py-16 bg-white text-black" id="industries">
   <div className="max-w-7xl mx-auto px-6">
     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
       Types of Industries to Certify
@@ -218,6 +216,10 @@ const Home: React.FC = () => {
     </div>
   </div>
 </section>
+
+<section className="w-full">
+        <ProductFlow />
+      </section>
 
       </section>
 
