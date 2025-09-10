@@ -81,14 +81,14 @@ export default function ProductFlow() {
   ];
 
   return (
-    <section className="relative w-full py-20 bg-black">
+    <section className="relative w-full py-20 bg-white">
       <h2 className="text-4xl font-bold text-center mb-12">Product Flow</h2>
 
       <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 md:px-20">
         {items.map((item, index) => (
           <div
             key={index}
-            className="relative bg-black/10 backdrop-blur-lg rounded-2xl shadow-xl border border-white/10 p-6 text-center overflow-hidden"
+            className="relative bg-black text-white/10 backdrop-blur-lg rounded-2xl shadow-xl border border-black/10 p-6 text-center overflow-hidden"
           >
             {/* Meteor Effect */}
             <Meteors number={8} />

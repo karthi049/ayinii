@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-black text-white py-20">
+      <section className="bg-white text-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent mb-6">
@@ -75,11 +75,11 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-16 bg-black" >
+      <section className="py-16 bg-white text-black" >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="bg-black p-8 rounded-lg shadow-md">
+            <div className="bg-black   p-8 rounded-lg shadow-md">
               <h2 className="text-2xl font-bold bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent mb-6">
                 Send us a Message
               </h2>
@@ -190,7 +190,7 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Map Section */}
-      <section className="bg-black py-16">
+      <section className="bg-white text-black py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent mb-4">
