@@ -78,7 +78,7 @@ const Home: React.FC = () => {
                     "_blank"
                   )
                 }
-                className="bg-orange-400  text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center"
+                className="bg-orange-400 font-quicksand text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center"
               >
                 Download App
               </button>
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
                 behavior: "smooth",
                  });
                 }}
-              className="border-2 border-orange-400 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-orange-400 hover:text-gray-900  transition-colors">
+              className="border-2 font-quicksand border-orange-400 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-orange-400 hover:text-gray-900  transition-colors">
                 Explore More
               </button>
             </div>

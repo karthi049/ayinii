@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-            <img src={logo} alt="Logo" className="h-18 w-16" />  
+            <img src={logo} alt="Logo" className="h-18 w-16" onClick={() => window.location.href = "/"}/>  
             </div>
             <Navigation />
           </div>
