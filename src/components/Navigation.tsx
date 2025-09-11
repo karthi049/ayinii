@@ -15,10 +15,10 @@ const Navigation: React.FC = () => {
           key={item.path}
           to={item.path}
           className={({ isActive }) =>
-            `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+            `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-50 ${
               isActive
                 ? 'bg-gradient-to-r from-orange-300 to-orange-500 text-black'
-                : 'text-black hover:bg-gradient-to-r from-orange-300 to-orange-500 hover:text-white'    
+                : 'text-black hover:bg-gradient-to-r from-orange-300 to-orange-500 hover:text-white'
             }`
           }
         >

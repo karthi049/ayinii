@@ -60,13 +60,13 @@ const Contact: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-white text-black py-20">
+      <section className="bg-white text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent mb-6">
               Get in Touch
             </h1>
-            <p className="text-xl text-white max-w-2xl mx-auto">
+            <p className="text-xl text-black max-w-2xl mx-auto">
               Have a question or want to work together? We'd love to hear from you. 
               Send us a message and we'll respond as soon as possible.
             </p>
@@ -75,11 +75,11 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-16 bg-white text-black" >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 bg-white text-white" >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="bg-black   p-8 rounded-lg shadow-md">
+            <div className="bg-white   p-8 rounded-lg shadow-md border border-orange-300">
               <h2 className="text-2xl font-bold bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent mb-6">
                 Send us a Message
               </h2>
@@ -95,7 +95,7 @@ const Contact: React.FC = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full bg-black px-4 py-2 border border-orange-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-700"
+                    className="w-full bg-white px-4 py-2 border border-orange-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-700"
                     placeholder="Your full name"
                   />
                 </div>
@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full bg-black px-4 py-2 border border-orange-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-700"
+                    className="w-full bg-white px-4 py-2 border border-orange-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-700"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full bg-black px-4 py-2 border border-orange-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-700"
+                    className="w-full bg-white px-4 py-2 border border-orange-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-700"
                     placeholder="What is this about?"
                   />
                 </div>
@@ -143,14 +143,14 @@ const Contact: React.FC = () => {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="w-full bg-black px-4 py-2 border border-orange-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-700"
+                    className="w-full bg-white px-4 py-2 border border-orange-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-700"
                     placeholder="Tell us more about your inquiry..."
                   />
                 </div>
                 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-orange-300 to-orange-500 text-black py-3 px-6 rounded-lg font-semibold hover:bg-gradient-to-r hover:from-orange-400 hover:to-orange-600 transition-colors flex items-center justify-center"
+                  className="w-full bg-gradient-to-r from-orange-300 to-orange-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gradient-to-r hover:from-orange-400 hover:to-orange-600 transition-colors flex items-center justify-center"
                 >
                   <Send className="w-5 h-5 mr-2" />
                   Send Message
@@ -164,7 +164,7 @@ const Contact: React.FC = () => {
                 <h2 className="text-2xl font-bold bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent mb-6">
                   Contact Information
                 </h2>
-                <p className="text-white mb-8">
+                <p className="text-black mb-8">
                   We're here to help and answer any question you might have. 
                   We look forward to hearing from you.
                 </p>
@@ -178,8 +178,8 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">{info.title}</h3>
-                      <p className="text-gray-400">{info.details}</p>
-                      <p className="text-sm text-gray-500">{info.subtitle}</p>
+                      <p className="text-black">{info.details}</p>
+                      <p className="text-sm text-black">{info.subtitle}</p>
                     </div>
                   </div>
                 ))}
@@ -190,13 +190,13 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Map Section */}
-      <section className="bg-white text-black py-16">
+      <section className="bg-white text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent mb-4">
               Visit Our Office
             </h2>
-            <p className="text-white">
+            <p className="text-black">
               We're located in the heart of the business district, easily accessible by public transport.
             </p>
           </div>
@@ -204,7 +204,7 @@ const Contact: React.FC = () => {
           <div className="bg-gray-300 rounded-lg h-96 flex items-center justify-center">
             <div className="text-center">
               <MapPin className="w-16 h-16 text-gray-500 mx-auto mb-4" />
-              <p className="text-gray-600">
+              <p className="text-black">
                 Interactive map would be embedded here
               </p>
               <p className="text-sm text-gray-500 mt-2">

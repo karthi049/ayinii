@@ -88,7 +88,7 @@ export default function ProductFlow() {
         {items.map((item, index) => (
           <div
             key={index}
-            className="relative bg-black text-white/10 backdrop-blur-lg rounded-2xl shadow-xl border border-black/10 p-6 text-center overflow-hidden"
+            className="relative bg-black/10 backdrop-blur-lg rounded-2xl shadow-xl border border-white/10 p-6 text-center overflow-hidden"
           >
             {/* Meteor Effect */}
             <Meteors number={8} />
@@ -101,7 +101,7 @@ export default function ProductFlow() {
             <h3 className="text-2xl font-semibold mb-3 relative z-10">
               {item.title}
             </h3>
-            <p className="text-gray-200 relative z-10">{item.text}</p>
+            <p className="text-black relative z-10">{item.text}</p>
           </div>
         ))}
       </div>
