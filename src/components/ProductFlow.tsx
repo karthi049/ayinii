@@ -88,7 +88,7 @@ export default function ProductFlow() {
         {items.map((item, index) => (
           <div
             key={index}
-            className="relative bg-black/10 backdrop-blur-lg rounded-2xl shadow-xl border border-white/10 p-6 text-center overflow-hidden"
+            className="relative bg-black/5 backdrop-blur-lg rounded-2xl shadow-xl border border-white/10 p-6 text-center overflow-hidden"
           >
             {/* Meteor Effect */}
             <Meteors number={8} />
