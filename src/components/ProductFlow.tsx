@@ -37,7 +37,7 @@ const Meteors = ({ number = 15 }: { number?: number }) => {
             }}
             transition={{ duration, delay, repeat: Infinity, ease: "linear" }}
             style={{ left: `${left}%` }}
-            className="absolute top-0 w-[2px] h-[80px] bg-gradient-to-b from-white/80 to-transparent rounded-full"
+            className="absolute top-0 w-[2px] h-[80px] bg-gradient-to-b from-orange-500 to-transparent rounded-full"
           />
         );
       })}
