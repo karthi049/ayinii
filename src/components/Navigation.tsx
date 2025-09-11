@@ -18,7 +18,7 @@ const Navigation: React.FC = () => {
             `px-3 py-2 rounded-md text-sm font-quicksand transition-colors duration-50 ${
               isActive
                 ? 'bg-gradient-to-r from-orange-300 to-orange-500 text-black'
-                : 'text-black hover:bg-gradient-to-r from-orange-300 to-orange-500 hover:text-black'
+                : 'text-black hover:bg-gradient-to-r from-orange-300 to-orange-500 hover:text-white'
             }`
           }
         >

@@ -78,12 +78,18 @@ const Home: React.FC = () => {
                     "_blank"
                   )
                 }
-                className="bg-gray-900 text-orange-400 px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center"
+                className="bg-orange-400  text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center"
               >
                 Download App
               </button>
 
-              <button className="border-2 border-gray-900 text-orange-400 px-6 py-2 rounded-lg font-semibold hover:bg-gray-900 hover:text-orange-400 transition-colors">
+              <button 
+                onClick={() => {
+                document.getElementById("next-section")?.scrollIntoView({
+                behavior: "smooth",
+                 });
+                }}
+              className="border-2 border-orange-400 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-orange-400 hover:text-gray-900  transition-colors">
                 Explore More
               </button>
             </div>
@@ -98,6 +104,7 @@ const Home: React.FC = () => {
 
       <div>
         <section
+        id="next-section"
           className="w-full h-screen bg-white flex flex-col md:flex-row pb-12"
         >
           {/* Left Side: Image */}
@@ -114,12 +121,10 @@ const Home: React.FC = () => {
             <div className="text-center md:text-left">
               <h1 className="text-4xl bg-gradient-to-r from-orange-400 to-orange-900 bg-clip-text text-transparent mb-4">Why Ayini ?</h1>
               <p className="text-lg text-black mb-6">
-                Your gateway to powerful digital certifications and learning
-                tools.
+                Ayini Foods provides a free platform where businesses can easily list and sell their products. Along with this, brands receive free certification to build trust and credibility.
+                 To further support growth, Ayini Foods also takes care of marketing efforts, helping products reach a wider audience. Additionally, testing services are offered at better prices, and for some brands, these services are even available completely free.
+
               </p>
-              <button className="border-2 border-gray-900 text-orange-400 px-8 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-orange-400 transition-colors">
-                Get Started
-              </button>
             </div>
           </div>
         </section>
