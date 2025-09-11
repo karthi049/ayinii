@@ -53,7 +53,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <section className="relative bg-white text-black py-40 overflow-hidden">
+      <section className="relative bg-white text-black pt-32 pb-6 overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col items-center justify-center text-center">
           {/* Centered Content */}
@@ -61,7 +61,7 @@ const Home: React.FC = () => {
             <h2 className="text-3xl md:text-5xl mb-2 text-black">
               Welcome to
             </h2>
-            <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-bold bg-gradient-to-r from-orange-300 to-orange-700 bg-clip-text text-transparent mb-10 leading-none">
+            <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-bold bg-gradient-to-r from-orange-300 to-orange-700 bg-clip-text text-transparent mb-6 leading-none">
               Ayin!
             </h1>
 
@@ -78,12 +78,18 @@ const Home: React.FC = () => {
                     "_blank"
                   )
                 }
-                className="bg-gray-900 text-orange-400 px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center"
+                className="bg-orange-400  text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center"
               >
                 Download App
               </button>
 
-              <button className="border-2 border-gray-900 text-orange-400 px-6 py-2 rounded-lg font-semibold hover:bg-gray-900 hover:text-orange-400 transition-colors">
+              <button 
+                onClick={() => {
+                document.getElementById("next-section")?.scrollIntoView({
+                behavior: "smooth",
+                 });
+                }}
+              className="border-2 border-orange-400 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-orange-400 hover:text-gray-900  transition-colors">
                 Explore More
               </button>
             </div>
@@ -92,13 +98,14 @@ const Home: React.FC = () => {
       </div>
 
       {/* Instructions Card - Bottom Right */}
-      <div className="absolute bottom-4 right-6 z-20">
-        
+      <div className="absolute bottom-4 right-6 z-10">
       </div>
     </section>
+
       <div>
         <section
-          className="w-full h-screen bg-white flex flex-col md:flex-row"
+        id="next-section"
+          className="w-full h-screen bg-white flex flex-col md:flex-row pb-12"
         >
           {/* Left Side: Image */}
           <div className="md:w-1/2 h-1/2 md:h-full flex items-center justify-center">
@@ -110,22 +117,20 @@ const Home: React.FC = () => {
           </div>
 
           {/* Right Side: Text */}
-          <div className="md:w-1/2 h-1/2 md:h-full flex items-center justify-center px-8">
+          <div className="md:w-1/2 h-1/2 md:h-full flex items-center justify-center ">
             <div className="text-center md:text-left">
-              <h1 className="text-4xl font-marker bg-gradient-to-r from-orange-400 to-orange-900 bg-clip-text text-transparent mb-4">Why Ayini ?</h1>
+              <h1 className="text-4xl bg-gradient-to-r from-orange-400 to-orange-900 bg-clip-text text-transparent mb-4">Why Ayini ?</h1>
               <p className="text-lg text-black mb-6">
-                Your gateway to powerful digital certifications and learning
-                tools.
+                Ayini Foods provides a free platform where businesses can easily list and sell their products. Along with this, brands receive free certification to build trust and credibility.
+                 To further support growth, Ayini Foods also takes care of marketing efforts, helping products reach a wider audience. Additionally, testing services are offered at better prices, and for some brands, these services are even available completely free.
+
               </p>
-              <button className="border-2 border-gray-900 text-orange-400 px-8 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-orange-400 transition-colors">
-                Get Started
-              </button>
             </div>
           </div>
         </section>
       </div>
 
-      <section className="py-16 bg-white text-black">
+      <section className="pb-12 bg-white text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -165,7 +170,7 @@ const Home: React.FC = () => {
       
       <section className="py-10 bg-white text-black" id="certifications">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-8">Ayini Certifications</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Ayini Certifications</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 px-4 md:px-0">
             {certifications.map((item, index) => (
@@ -183,7 +188,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-<section className="py-16 bg-white text-black" id="industries">
+<section className="pt-20 bg-white text-black" id="industries">
   <div className="max-w-7xl mx-auto px-6">
     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
       Types of Industries to Certify
@@ -191,11 +196,11 @@ const Home: React.FC = () => {
 
     <div className="flex flex-wrap justify-center gap-8">
       {[
-        { title: "Manufacturer", desc: "Food and food related products", color: "bg-cyan-500 text-black" },
-        { title: "Repackers", desc: "Flour, oil etc.", color: "bg-teal-500 text-black" },
-        { title: "Wholesalers", desc: "Spices, groceries, fruits, vegetables, meat", color: "bg-green-600 text-black" },
-        { title: "Restaurants", desc: "Restaurants using certified products", color: "bg-yellow-300 text-black" },
-        { title: "Shops", desc: "Shops selling certified products only", color: "bg-red-500 text-black" },
+        { title: "Manufacturer", desc: "Food and food related products", color: "bg-gradient-to-b from-orange-50 to-orange-200 relative text-black" },
+        { title: "Repackers", desc: "Flour, oil etc.", color: "bg-gradient-to-b from-orange-50 to-orange-200 relative text-black" },
+        { title: "Wholesalers", desc: "Spices, groceries, fruits, vegetables, meat", color: "bg-gradient-to-b from-orange-50 to-orange-200 relative text-black" },
+        { title: "Restaurants", desc: "Restaurants using certified products", color: "bg-gradient-to-b from-orange-50 to-orange-200 relative text-black" },
+        { title: "Shops", desc: "Shops selling certified products only", color: "bg-gradient-to-b from-orange-50 to-orange-200 relative text-black" },
       ].map((item, idx) => (
         <div
           key={idx}

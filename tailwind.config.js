@@ -21,6 +21,9 @@ module.exports = {
         slideInLeft: 'slideInLeft 1s ease-out forwards',
         fadeInRight: 'fadeInRight 1.2s ease-out forwards',
       },
+      fontFamily: {
+        quicksand: ['Quicksand', 'sans-serif'],
+      },
     },
   },
   plugins: [],
